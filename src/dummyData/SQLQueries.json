@@ -1,0 +1,41 @@
+{
+    "users": [
+      { "name": "Alice Johnson", "email": "alice@example.com", "age": 25 },
+      { "name": "Bob Smith", "email": "bob@example.com", "age": 30 },
+      { "name": "Charlie Brown", "email": "charlie@example.com", "age": 28 },
+      { "name": "David White", "email": "david@example.com", "age": 35 },
+      { "name": "Emma Wilson", "email": "emma@example.com", "age": 27 }
+    ],
+    
+    "products": [
+      { "id": 1, "name": "Laptop", "price": 800, "category": "Electronics" },
+      { "id": 2, "name": "Smartphone", "price": 600, "category": "Electronics" },
+      { "id": 3, "name": "Table", "price": 150, "category": "Furniture" },
+      { "id": 4, "name": "Chair", "price": 80, "category": "Furniture" },
+      { "id": 5, "name": "Book", "price": 20, "category": "Stationery" }
+    ],
+    
+    "orders": [
+      { "id": 1, "user_id": 1, "product_id": 2, "quantity": 1, "total_price": 600 },
+      { "id": 2, "user_id": 3, "product_id": 1, "quantity": 2, "total_price": 1600 },
+      { "id": 3, "user_id": 2, "product_id": 5, "quantity": 3, "total_price": 60 },
+      { "id": 4, "user_id": 4, "product_id": 3, "quantity": 1, "total_price": 150 },
+      { "id": 5, "user_id": 5, "product_id": 4, "quantity": 4, "total_price": 320 }
+    ],
+    
+    "employees": [
+      { "id": 1, "name": "John Doe", "department": "HR", "salary": 50000 },
+      { "id": 2, "name": "Jane Smith", "department": "Engineering", "salary": 70000 },
+      { "id": 3, "name": "Sam Wilson", "department": "Marketing", "salary": 55000 },
+      { "id": 4, "name": "Emily Davis", "department": "Finance", "salary": 60000 },
+      { "id": 5, "name": "Michael Brown", "department": "IT", "salary": 65000 }
+    ],
+    
+    "transactions": [
+      { "id": 1, "user_id": 1, "amount": 200, "transaction_type": "Deposit", "status": "Completed" },
+      { "id": 2, "user_id": 2, "amount": 500, "transaction_type": "Withdrawal", "status": "Pending" },
+      { "id": 3, "user_id": 3, "amount": 100, "transaction_type": "Deposit", "status": "Completed" },
+      { "id": 4, "user_id": 4, "amount": 300, "transaction_type": "Withdrawal", "status": "Failed" },
+      { "id": 5, "user_id": 5, "amount": 400, "transaction_type": "Deposit", "status": "Completed" }
+    ]
+  }

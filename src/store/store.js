@@ -1,14 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import editorReducer from './editorSlice';
-import historyReducer from './historySlice';
-import themeReducer from './themeSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import editorReducer from "./editorSlice";
 
 export const store = configureStore({
   reducer: {
     editor: editorReducer,
-    history: historyReducer,
-    theme: themeReducer,
   },
 });
-
-export default store;

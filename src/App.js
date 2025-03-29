@@ -1,12 +1,23 @@
+import React from "react";
+import Navbar from "./components/Header/Navbar";
+import SQLEditor from "./components/Editor/SQLEditor";
+import HistoryList from "./components/History/HistoryList";
+import "./styles/App.css";
 
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>hello guys</h1>
+    <div className="app-container">
+      <Navbar />
+      <div className="main-content">
+        <aside className="sidebar">📌 Tables (Placeholder)</aside>
+        <section className="editor-section">
+          <SQLEditor />
+          <div className="results-placeholder">📊 Query Results (Placeholder)</div>
+          <HistoryList />
+        </section>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
