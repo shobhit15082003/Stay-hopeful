@@ -1,0 +1,15 @@
+/* ThemeToggle.css */
+.theme-toggle {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #777;
+  }
+  

@@ -1,7 +1,10 @@
 import React, { useState, useRef } from "react";
 import Editor from "@monaco-editor/react";
-import { useDispatch } from "react-redux";
-import { addQuery } from "../../store/historySlice";
+import { useDispatch,useSelector } from "react-redux";
+
+import { addToHistory } from "../../store/historySlice";
+import { setQuery } from "../../store/editorSlice";
+
 import SQLQueries from '../../dummyData/SQLQueries.json';
 
 const SQLEditor = ({ selectedQuery }) => {
@@ -14,8 +17,9 @@ const SQLEditor = ({ selectedQuery }) => {
   };
 
   const handleRunQuery = () => {
+    // console.log("Imported addToHistory:", addToHistory);
     if (query.trim()) {
-      dispatch(addQuery(query)); // Save query in history
+      dispatch(addToHistory(query)); // Save query in history
       console.log("Executing:", query);
     }
   };

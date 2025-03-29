@@ -1,11 +1,11 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  query: '',
+  query: "",
 };
 
 const editorSlice = createSlice({
-  name: 'editor',
+  name: "editor",
   initialState,
   reducers: {
     setQuery: (state, action) => {
