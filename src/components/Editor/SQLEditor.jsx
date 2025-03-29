@@ -8,12 +8,14 @@ import { setQuery } from "../../store/editorSlice";
 import SQLQueries from '../../dummyData/SQLQueries.json';
 
 const SQLEditor = ({ selectedQuery }) => {
-  const [query, setQuery] = useState("");
+//   const [query, setQuery] = useState("");
+const query = useSelector((state) => state.editor.query);
   const editorRef = useRef(null);
   const dispatch = useDispatch();
 
   const handleEditorChange = (value) => {
-    setQuery(value);
+    // setQuery(value);
+    dispatch(setQuery(value)); 
   };
 
   const handleRunQuery = () => {
@@ -30,7 +32,9 @@ const SQLEditor = ({ selectedQuery }) => {
   };
 
   const handleClearEditor = () => {
-    setQuery("");
+    // setQuery("");
+    dispatch(setQuery(""));
+
   };
 
   const handleSelectQuery = (event) => {
@@ -42,7 +46,8 @@ const SQLEditor = ({ selectedQuery }) => {
       "5": "SELECT * FROM transactions;",
     };
   
-    setQuery(queries[event.target.value]);
+    // setQuery(queries[event.target.value]);
+    dispatch(setQuery(queries[event.target.value]));
   };
 
   return (
