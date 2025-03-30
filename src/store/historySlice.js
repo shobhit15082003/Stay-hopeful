@@ -10,6 +10,9 @@ const historySlice = createSlice({
   reducers: {
     addToHistory: (state, action) => {
       state.history.unshift(action.payload);
+      if (state.history.length > 10) {
+        state.history.pop(); // Remove the oldest entry to keep only 10 items
+      }
     },
     clearHistory: (state) => {
       state.history = [];
