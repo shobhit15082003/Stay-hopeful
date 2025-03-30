@@ -47,7 +47,7 @@ const TablesData = () => {
   return (
     <div className="sidebar">
       {/* Main Heading */}
-      <h2 className="sidebar-heading">Getting Started</h2>
+      {/* <h2 className="sidebar-heading">Getting Started</h2> */}
 
       {/* Getting Started Dropdown */}
       <div className="dropdown">
