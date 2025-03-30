@@ -41,12 +41,19 @@ const SQLEditor = () => {
       dispatch(setResult(dummyData[selectedKey])); // ✅ Update the result slice
       console.log(`Executing: ${query} | Showing results from: ${selectedKey}`);
     }
+    else
+      alert("Nothing to run");
   };
   
 
   const handleCopyQuery = () => {
-    navigator.clipboard.writeText(query);
-    alert("Query copied!");
+    if(query.length==0)
+      alert("Nothing to copy");
+    else{
+
+      navigator.clipboard.writeText(query);
+      alert("Query copied!");
+    }
   };
 
   const handleClearEditor = () => {
