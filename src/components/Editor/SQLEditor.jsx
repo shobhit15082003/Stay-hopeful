@@ -47,7 +47,7 @@ const SQLEditor = () => {
   
 
   const handleCopyQuery = () => {
-    if(query.length==0)
+    if(query.length===0)
       alert("Nothing to copy");
     else{
 
