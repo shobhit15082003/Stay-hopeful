@@ -5,6 +5,7 @@ import HistoryList from "./components/History/HistoryList";
 import FavoriteList from "./components/Favorite/FavoriteList";
 import "./styles/App.css";
 import QueryResults from "./components/Results/QueryResults";
+import TablesData from "./components/Tables/tablesData";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <Navbar />
       <div className="main-content">
         <aside className="sidebar flex flex-col">
-          <div>📌 Tables (Placeholder)</div>
+          <div><TablesData/></div>
           <div><FavoriteList/></div>
         </aside>
 

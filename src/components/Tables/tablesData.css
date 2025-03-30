@@ -1,0 +1,38 @@
+.tables-panel {
+    width: 300px;
+    padding: 15px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .table-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .table-item {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.2s;
+  }
+  
+  .table-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .table-schema {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
