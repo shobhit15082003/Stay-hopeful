@@ -57,6 +57,8 @@
   transition: background 0.3s;
 }
 
+
+
 .dark-theme .dropdown {
   background-color: #2a2a2a;
   color: #f1f1f1;
@@ -84,3 +86,4 @@
 .dark-theme .clear-btn:hover {
   background-color: #c82333;
 }
+
