@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeFavorite } from "../../store/favoriteSlice"; // Import favorite actions
+import { setQuery } from "../../store/editorSlice"; // Import editor actions
+import { FaStar } from "react-icons/fa"; // Import star icon
 import "./FavoriteList.css";
 
 const FavoriteList = () => {
@@ -11,22 +13,29 @@ const FavoriteList = () => {
     dispatch(removeFavorite(query)); // Remove query from favorites
   };
 
+  const handleSelectFavorite = (query) => {
+    dispatch(setQuery(query)); // Store selected favorite query in editorSlice
+  };
+
   return (
-    <div className="history-list">
-      <h3>⭐ Favorite Queries</h3>
+    <div className="favorite-list-container">
+      <h3 className="favorite-heading">⭐ Favorite Queries</h3>
       {favorites.length > 0 ? (
-        <ul>
+        <ul className="favorite-list">
           {favorites.map((query, index) => (
-            <li key={index} style={{ display: "flex", alignItems: "center" }}>
-              <span style={{ flexGrow: 1 }}>{query}</span>
-              <button onClick={() => handleRemoveFavorite(query)} className="delete-btn">
-                ❌
-              </button>
+            <li key={index} className="favorite-item">
+              <span className="favorite-text" onClick={() => handleSelectFavorite(query)}>
+                {query}
+              </span>
+              <FaStar
+                onClick={() => handleRemoveFavorite(query)}
+                className="favorite-icon"
+              />
             </li>
           ))}
         </ul>
       ) : (
-        <p>No favorites yet.</p>
+        <p className="no-favorites">No favorites yet.</p>
       )}
     </div>
   );
