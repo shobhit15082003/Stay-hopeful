@@ -19,7 +19,8 @@
     "react-scripts": "5.0.1",
     "sql-formatter": "^15.5.2",
     "styled-components": "^6.1.16",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",
