@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import './QueryResults.css'
 
 const QueryResults = () => {
   const result = useSelector((state) => state.result.result); // Corrected state reference
