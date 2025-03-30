@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/Header/Navbar";
 import SQLEditor from "./components/Editor/SQLEditor";
 import HistoryList from "./components/History/HistoryList";
@@ -8,6 +8,17 @@ import QueryResults from "./components/Results/QueryResults";
 import TablesData from "./components/Tables/tablesData";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulating SQLEditor loading delay (3-4 seconds)
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 100); // Adjust based on actual delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="app-container">
       <Navbar />
@@ -18,9 +29,16 @@ const App = () => {
         </aside>
 
         <section className="editor-section">
-          <SQLEditor />
+          {isLoading ? (
+            <div className="preloader">
+              <div className="spinner"></div>
+              <p>Loading SQL Editor...</p>
+            </div>
+          ) : (
+            <SQLEditor />
+          )}
           <div className="results-placeholder">
-            <QueryResults/>
+            <QueryResults />
           </div>
           <HistoryList />
         </section>
