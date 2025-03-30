@@ -4,6 +4,7 @@ import SQLEditor from "./components/Editor/SQLEditor";
 import HistoryList from "./components/History/HistoryList";
 import FavoriteList from "./components/Favorite/FavoriteList";
 import "./styles/App.css";
+import QueryResults from "./components/Results/QueryResults";
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
         <section className="editor-section">
           <SQLEditor />
           <div className="results-placeholder">
-            📊 Query Results (Placeholder)
+            📊 <QueryResults/>
           </div>
           <HistoryList />
         </section>

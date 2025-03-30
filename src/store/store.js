@@ -3,6 +3,7 @@ import editorReducer from './editorSlice';
 import historyReducer from './historySlice';
 import themeReducer from './themeSlice';
 import favoriteReducer from './favoriteSlice';
+import resultReducer from './resultSlice';
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     history: historyReducer,
     theme: themeReducer,
     favorite:favoriteReducer,
+    result:resultReducer,
   },
 });
 
