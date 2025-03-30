@@ -60,7 +60,7 @@ const TablesData = () => {
             <p>1. Type your SQL query in the editor.</p>
             <p>2. Click "Run" to execute the query.</p>
             <p>3. View results in the table.</p>
-            <p>4. Use "Export" to download results.</p>
+            <p>4. Use "Download" to download results.</p>
           </div>
         )}
       </div>
