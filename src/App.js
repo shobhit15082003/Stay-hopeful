@@ -9,10 +9,16 @@ const App = () => {
     <div className="app-container">
       <Navbar />
       <div className="main-content">
-        <aside className="sidebar">📌 Tables (Placeholder)</aside>
+        <aside className="sidebar flex flex-col">
+          <div>📌 Tables (Placeholder)</div>
+          <div>⭐ Favorite</div>
+        </aside>
+
         <section className="editor-section">
           <SQLEditor />
-          <div className="results-placeholder">📊 Query Results (Placeholder)</div>
+          <div className="results-placeholder">
+            📊 Query Results (Placeholder)
+          </div>
           <HistoryList />
         </section>
       </div>
