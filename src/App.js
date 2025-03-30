@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Header/Navbar";
 import SQLEditor from "./components/Editor/SQLEditor";
 import HistoryList from "./components/History/HistoryList";
+import FavoriteList from "./components/Favorite/FavoriteList";
 import "./styles/App.css";
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
       <div className="main-content">
         <aside className="sidebar flex flex-col">
           <div>📌 Tables (Placeholder)</div>
-          <div>⭐ Favorite</div>
+          <div><FavoriteList/></div>
         </aside>
 
         <section className="editor-section">
