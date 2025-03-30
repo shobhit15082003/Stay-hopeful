@@ -8,18 +8,18 @@ import { setQuery } from "../../store/editorSlice";
 import SQLQueries from '../../dummyData/SQLQueries.json';
 
 const SQLEditor = ({ selectedQuery }) => {
-//   const [query, setQuery] = useState("");
+
 const query = useSelector((state) => state.editor.query);
   const editorRef = useRef(null);
   const dispatch = useDispatch();
 
   const handleEditorChange = (value) => {
-    // setQuery(value);
+ 
     dispatch(setQuery(value)); 
   };
 
   const handleRunQuery = () => {
-    // console.log("Imported addToHistory:", addToHistory);
+    
     if (query.trim()) {
       dispatch(addToHistory(query)); // Save query in history
       console.log("Executing:", query);
@@ -32,7 +32,7 @@ const query = useSelector((state) => state.editor.query);
   };
 
   const handleClearEditor = () => {
-    // setQuery("");
+    
     dispatch(setQuery(""));
 
   };
@@ -46,7 +46,7 @@ const query = useSelector((state) => state.editor.query);
       "5": "SELECT * FROM transactions;",
     };
   
-    // setQuery(queries[event.target.value]);
+   
     dispatch(setQuery(queries[event.target.value]));
   };
 
