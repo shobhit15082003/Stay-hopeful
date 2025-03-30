@@ -20,7 +20,7 @@ const App = () => {
         <section className="editor-section">
           <SQLEditor />
           <div className="results-placeholder">
-            📊 <QueryResults/>
+            <QueryResults/>
           </div>
           <HistoryList />
         </section>
