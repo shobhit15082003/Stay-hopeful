@@ -1,7 +1,10 @@
+/* Light Theme (Default) */
 .sidebar {
     width: 300px;
     padding: 15px;
     border-right: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #000;
   }
   
   .sidebar-heading {
@@ -22,6 +25,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    color: #333;
   }
   
   .dropdown-content {
@@ -37,6 +41,8 @@
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: #000;
   }
   
   .table-list {
@@ -61,5 +67,39 @@
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
+  }
+  
+  /* Dark Theme */
+  .dark-mode .sidebar {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border-right: 1px solid #444;
+  }
+  
+  .dark-mode .dropdown-header {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode .dropdown-content {
+    background-color: #222;
+    border: 1px solid #555;
+    color: #f1f1f1;
+  }
+  
+  .dark-mode .search-bar {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    border: 1px solid #555;
+  }
+  
+  .dark-mode .table-item:hover {
+    background-color: #444;
+  }
+  
+  .dark-mode .table-schema {
+    background: #222;
+    border: 1px solid #555;
+    color: #f1f1f1;
   }
   

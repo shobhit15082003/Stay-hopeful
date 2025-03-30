@@ -1,3 +1,4 @@
+/* General Styles */
 .favorite-list-container {
     max-width: 400px;
     margin: 20px auto;
@@ -5,6 +6,7 @@
     border-radius: 8px;
     background-color: #f8f9fa;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
   }
   
   .favorite-heading {
@@ -13,6 +15,7 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
+    transition: color 0.3s;
   }
   
   .favorite-list {
@@ -29,7 +32,7 @@
     background-color: #ffffff;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.3s, box-shadow 0.3s;
   }
   
   .favorite-item:hover {
@@ -62,5 +65,32 @@
   .no-favorites {
     text-align: center;
     color: #777;
+  }
+  
+  /* Dark Theme Support */
+  .dark-theme .favorite-list-container {
+    background-color: #1e1e1e;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-theme .favorite-heading {
+    color: #f1f1f1;
+  }
+  
+  .dark-theme .favorite-item {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-theme .favorite-text {
+    color: #f1f1f1;
+  }
+  
+  .dark-theme .favorite-text:hover {
+    color: #4dabf7;
+  }
+  
+  .dark-theme .no-favorites {
+    color: #aaa;
   }
   

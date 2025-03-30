@@ -1,0 +1,141 @@
+/* Light Theme (Default) */
+.query-results {
+    max-width: 800px;
+    max-height: 350px; /* Reduced height */
+    overflow-y: auto;
+    margin: 15px auto;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Style scrollbar for better visibility */
+.query-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.query-results::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 3px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px; /* Reduced font size */
+    transition: color 0.3s;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+th, td {
+    padding: 6px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px; /* Reduced font size */
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px; /* Slightly smaller */
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.download-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    gap: 6px;
+}
+
+label {
+    font-size: 12px; /* Reduced font size */
+    color: #333;
+    transition: color 0.3s;
+}
+
+select {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px; /* Reduced font size */
+    background-color: white;
+    color: #333;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+button {
+    padding: 6px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px; /* Reduced font size */
+    transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Dark Theme */
+.dark-theme .query-results {
+    background: #1e1e1e;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Theme Scrollbar */
+.dark-theme .query-results::-webkit-scrollbar-thumb {
+    background-color: #555;
+}
+
+.dark-theme h2 {
+    color: #f1f1f1;
+}
+
+.dark-theme th {
+    background-color: #0056b3;
+}
+
+.dark-theme td {
+    color: #ddd;
+    border-bottom: 1px solid #444;
+}
+
+.dark-theme tr:hover {
+    background-color: #2a2a2a;
+}
+
+.dark-theme label {
+    color: #ddd;
+}
+
+.dark-theme select {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border: 1px solid #555;
+}
+
+.dark-theme button {
+    background: #0056b3;
+}
+
+.dark-theme button:hover {
+    background: #003d80;
+}

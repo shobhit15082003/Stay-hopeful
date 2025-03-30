@@ -1,10 +1,37 @@
-/* Navbar.css */
 .navbar {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between; /* This ensures the toggle button is on the right */
-    align-items: center;
-  }
-  
+  background-color: #222;
+  color: white;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Arial", sans-serif;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.navbar button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar button:hover {
+  color: #1e90ff;
+}
+
+.dark-theme .navbar {
+  background-color: #111;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
