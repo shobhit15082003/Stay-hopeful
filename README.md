@@ -27,6 +27,11 @@ The **SQL Query Editor** is a web-based application that simplifies the process 
 For a more detailed explanation of the features, please check the full documentation here:  
 [SQL Query Editor Detailed Documentation](https://docs.google.com/document/d/16ZvaZj5PPeeEAj5T1B4usrchc5KPmObferQRokq4C3s/edit?usp=sharing)
 
+## Additional Resources:
+- **Folder Structure**: View the folder structure of the project [here](https://drive.google.com/file/d/1AyVJx6u_3uVu62krlMZctauUO3aYfoKj/view?usp=sharing).
+- **ER Diagram**: View the ER diagram of the project [here](https://drive.google.com/file/d/1X9igiiqOI2VJwbRGsXkV3Kua0N_FyPhX/view?usp=drive_link).
+- **Architecture Diagram**: View the architecture diagram of the project [here](https://drive.google.com/file/d/1SlPY2FPtQrgqMBougb5_i80wxTeL-BCn/view?usp=drive_link).
+
 ## Tech Stack
 
 ### 1. Frontend
@@ -56,6 +61,8 @@ For a more detailed explanation of the features, please check the full documenta
 
 - **Deployment Platforms**: Vercel (for deployment)  
   [Live Demo on Vercel](https://stay-hopeful.vercel.app/)
+
+  
 
 ## Performance Metrics
 
