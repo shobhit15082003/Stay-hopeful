@@ -10,9 +10,9 @@ const favoriteSlice = createSlice({
   reducers: {
     addFavorite: (state, action) => {
       state.favorites.push(action.payload);
-      if (state.favorites.length > 10) {
-        state.favorites.shift(); // Remove the oldest entry to keep only 10 items
-      }
+    //   if (state.favorites.length > 10) {   /.to store only 10 favorites
+    //     state.favorites.shift(); 
+    //   }
     },
     removeFavorite: (state, action) => {
       state.favorites = state.favorites.filter(item => item !== action.payload);

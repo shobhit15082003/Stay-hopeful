@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeFavorite } from "../../store/favoriteSlice"; // Import favorite actions
-import { setQuery } from "../../store/editorSlice"; // Import editor actions
-import { FaStar } from "react-icons/fa"; // Import star icon
+import { removeFavorite } from "../../store/favoriteSlice"; 
+import { setQuery } from "../../store/editorSlice"; 
+import { FaStar } from "react-icons/fa"; 
 import "./FavoriteList.css";
 
 const FavoriteList = () => {

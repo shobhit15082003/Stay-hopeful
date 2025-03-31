@@ -11,10 +11,10 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulating SQLEditor loading delay (3-4 seconds)
+    // Simulating SQLEditor loading delay 
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 100); // Adjust based on actual delay
+    }, 200); 
 
     return () => clearTimeout(timer);
   }, []);

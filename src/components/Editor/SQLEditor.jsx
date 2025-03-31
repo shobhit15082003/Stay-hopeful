@@ -11,7 +11,7 @@ const SQLEditor = () => {
   const query = useSelector((state) => state.editor.query);
   const editorRef = useRef(null);
   const dispatch = useDispatch();
-  const selectedKeyRef = useRef(null); // Store last selected key
+  const selectedKeyRef = useRef(null); 
 
   const predefinedTables = {
     "1": "users",
@@ -33,12 +33,12 @@ const SQLEditor = () => {
   
       let selectedKey = selectedKeyRef.current;
   
-      // If no predefined query is selected or user modified the query manually
+    
       if (!selectedKey || query !== `SELECT * FROM ${selectedKey};`) {
         selectedKey = extraTables[Math.floor(Math.random() * extraTables.length)];
       }
   
-      dispatch(setResult(dummyData[selectedKey])); // ✅ Update the result slice
+      dispatch(setResult(dummyData[selectedKey]));
       console.log(`Executing: ${query} | Showing results from: ${selectedKey}`);
     }
     else
@@ -67,7 +67,7 @@ const SQLEditor = () => {
       selectedKey = extraTables[Math.floor(Math.random() * extraTables.length)];
     }
 
-    selectedKeyRef.current = selectedKey; // Store the selected table
+    selectedKeyRef.current = selectedKey;
     dispatch(setQuery(`SELECT * FROM ${selectedKey};`));
   };
 

@@ -25,19 +25,3 @@ export const { addToHistory, clearHistory } = historySlice.actions;
 export default historySlice.reducer;
 
 
-// import { createSlice } from "@reduxjs/toolkit";
-
-// const historySlice = createSlice({
-//   name: "history",
-//   initialState: {
-//     queries: [],
-//   },
-//   reducers: {
-//     addQuery: (state, action) => {
-//       state.queries.unshift(action.payload); // Newest query on top
-//     },
-//   },
-// });
-
-// export const { addQuery } = historySlice.actions;
-// export default historySlice.reducer;

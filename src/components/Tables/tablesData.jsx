@@ -4,7 +4,7 @@ import './tablesData.css';
 
 
 import { useDispatch } from "react-redux";
-import { setQuery } from "../../store/editorSlice"; // Importing the Redux action
+import { setQuery } from "../../store/editorSlice";
 
 
 const TablesData = () => {

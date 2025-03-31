@@ -1,13 +1,13 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setQuery } from "../../store/editorSlice"; // Import action from editorSlice
-import { addToHistory, clearHistory } from "../../store/historySlice"; // Import actions
-import { addFavorite, removeFavorite } from "../../store/favoriteSlice"; // Import favorite actions
+import { setQuery } from "../../store/editorSlice"; 
+import { addToHistory, clearHistory } from "../../store/historySlice";
+import { addFavorite, removeFavorite } from "../../store/favoriteSlice"; 
 import "./HistoryList.css";
 
 const HistoryList = () => {
-  const history = useSelector((state) => state.history.history); // Get history from Redux
-  const favorites = useSelector((state) => state.favorite.favorites); // Get favorites from Redux
+  const history = useSelector((state) => state.history.history); 
+  const favorites = useSelector((state) => state.favorite.favorites); 
   const dispatch = useDispatch();
 
   const handleHistoryClick = (query) => {
@@ -15,8 +15,8 @@ const HistoryList = () => {
   };
 
   const handleDeleteQuery = (index) => {
-    // Create a new array without the deleted item
-    const newHistory = history.filter((_, i) => i !== index);
+    
+    const newHistory = history.filter((_, i) => i !== index); // Create a new array without the deleted item
     dispatch(clearHistory()); // First, clear existing history
     newHistory.forEach((item) => dispatch(addToHistory(item))); // Then, add back remaining items
   };

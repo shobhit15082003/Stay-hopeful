@@ -1,4 +1,4 @@
-/* General Styles */
+
 .favorite-list-container {
     max-width: 400px;
     margin: 20px auto;
@@ -21,7 +21,10 @@
   .favorite-list {
     list-style: none;
     padding: 0;
-  }
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
   
   .favorite-item {
     display: flex;
@@ -67,7 +70,7 @@
     color: #777;
   }
   
-  /* Dark Theme Support */
+  /* Dark Theme  */
   .dark-theme .favorite-list-container {
     background-color: #1e1e1e;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);

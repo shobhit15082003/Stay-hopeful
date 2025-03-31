@@ -3,7 +3,7 @@ import "./ThemeToggle.css";
 
 const ThemeToggle = () => {
   const [darkMode, setDarkMode] = useState(() => {
-    return localStorage.getItem("theme") === "dark"; // Persist theme preference
+    return localStorage.getItem("theme") === "dark"; //  theme preference in local storage
   });
 
   useEffect(() => {
