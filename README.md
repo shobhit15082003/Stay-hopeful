@@ -15,50 +15,17 @@ The **SQL Query Editor** is a web-based application that simplifies the process 
 
 ## Features
 
-### 1. Query Editor (Monaco Editor)
-- **Code Editor**: A fully-functional SQL query editor powered by Monaco Editor.
-- **Execute Button**: Executes queries and displays results.
-- **Clear Button**: Resets the editor to a blank state.
-- **Copy Query Button**: Copies the current query to the clipboard for easy reuse.
-- **Syntax Validation**: Note: The editor does not validate SQL syntax.
+- **Query Editor**: Fully-functional editor powered by Monaco for writing and executing SQL queries.
+- **Results Display**: Query results shown in a clean, tabular format.
+- **History Management**: Stores the last 10 executed queries and allows quick reuse.
+- **Favorites**: Save and access your favorite queries for later use.
+- **Table List**: Reference available tables and insert them into your queries.
+- **Export**: Export query results in CSV or Excel (.xlsx) format.
+- **Dark Mode**: Toggle between light and dark themes for better visual comfort.
+- **Preloader**: Smooth loading experience with an interactive preloader.
 
-### 2. Query Execution & Results
-- **Results Display**: Query results are shown in a clean, tabular format.
-- **Efficient Rendering**: Optimized rendering for smooth user experience.
-- **No SQL Validation**: Query execution does not involve syntax validation.
-
-### 3. Available Tables Panel
-- **Table List**: Displays a list of available tables for reference.
-- **Search Functionality**: Includes a search bar for easy filtering of tables.
-- **Table Insertion**: Clicking on a table name inserts it directly into the query editor for faster query construction.
-
-### 4. Query History (Redux - No Database, No Timestamp)
-- **History Management**: Stores the last 10 executed queries for quick access.
-- **Latest Queries**: New queries appear at the top of the history list.
-- **Query Reuse**: Clicking a query from history reloads it into the editor.
-- **Duplicates**: Allows duplicate queries within history.
-- **Clear History**: A button is provided to clear all stored query history.
-
-### 5. Favorite Queries
-- **Favorites Storage**: Save favorite queries for easy access later.
-- **Add to Favorites**: A button next to the query allows users to add it to their favorites list.
-- **View Favorites**: A dedicated panel displays all saved favorite queries.
-- **Manage Favorites**: Users can delete or edit favorite queries from the list.
-
-### 6. Sidebar Navigation
-- **Navigation Sections**: Includes sections like "Getting Started," "Tables Reference," and "Query Editor."
-
-### 7. Dark Mode
-- **Theme Toggle**: Switch between light and dark themes to match visual preferences.
-- **Navigation Bar Toggle**: Conveniently located in the navigation bar.
-
-### 8. Export Query Results
-- **Export Formats**: Export query results in CSV or Excel (.xlsx) format.
-- **Download Button**: A download button is available to export results with a single click.
-
-### 9. Additional Features
-- **Copy Query**: A dedicated button for quickly copying the SQL query to the clipboard.
-- **Preloader**: Displays a loading screen while the editor is initializing to ensure a smooth startup experience.
+For a more detailed explanation of the features, please check the full documentation here:  
+[SQL Query Editor Detailed Documentation](https://docs.google.com/document/d/16ZvaZj5PPeeEAj5T1B4usrchc5KPmObferQRokq4C3s/edit?usp=sharing)
 
 ## Tech Stack
 
@@ -84,8 +51,11 @@ The **SQL Query Editor** is a web-based application that simplifies the process 
 - `xlsx` - Version: ^0.18.5
 
 ### 2. Deployment
-- **Version Control**: GitHub (for version control and repository hosting)
-- **Deployment Platforms**: Vercel (for deployment)
+- **Version Control**: GitHub (for version control and repository hosting)  
+  [GitHub Repository](https://github.com/shobhit15082003/Stay-hopeful)
+
+- **Deployment Platforms**: Vercel (for deployment)  
+  [Live Demo on Vercel](https://stay-hopeful.vercel.app/)
 
 ## Performance Metrics
 
@@ -106,12 +76,12 @@ These metrics indicate a responsive and smooth user experience with low interact
 ### Steps to Run Locally:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/sql-query-editor.git
+   git clone https://github.com/shobhit15082003/Stay-hopeful.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd sql-query-editor
+   cd Stay-hopeful
    ```
 
 3. Install dependencies:
@@ -128,5 +98,4 @@ These metrics indicate a responsive and smooth user experience with low interact
    ```
    http://localhost:3000
    ```
-
 
