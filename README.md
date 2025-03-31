@@ -69,7 +69,7 @@ Watch a complete walkthrough of the SQL Query Editor here: [Click here to Watch]
 
 ## Performance Metrics
 
-The following web performance metrics have been recorded for the SQL Query Editor:
+The performance of the SQL Query Editor has been evaluated using the web-vitals library, which measures key web performance metrics to ensure a smooth and responsive user experience. The recorded metrics are as follows:
 
 - **FID (First Input Delay)**: 0.8 ms
 - **TTFB (Time To First Byte)**: 500 ms
