@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
 import {store} from './store/store';
+import reportWebVitals from './reportWebVitals';
+
+
+const handleWebVitals = (metric) => {
+  console.log(metric); // Logs the Web Vitals metrics to the console
+};
 
 
 
@@ -13,6 +19,6 @@ root.render(
     <App />
   </Provider>
 );
-
+reportWebVitals(handleWebVitals);
 
 
